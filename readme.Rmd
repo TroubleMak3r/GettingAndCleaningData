@@ -1,0 +1,11 @@
+The purpose of this project is to demonstrate ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
+
+This repo includes:
+
+1. R script called run_analysis.R - script for performing the analysis from beginning to the end, the output of this script is the tidy data
+
+2. A code book called CodeBook.md - describes the variables, the data, and transformations or work with variables that I performed to clean up the data
+
+3. A readme file called README.md - a file that you reading now, its purpose is to help you to grasp the gist of the project, know how to move within files and read explanation what analysis file do
+
+You'll find all the information about the transformations I made in the CodeBook file. There are comments in the RScript file as well.

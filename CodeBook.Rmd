@@ -1,0 +1,15 @@
+---
+title: "CodeBook"
+author: "D.L."
+date: "Saturday, March 21, 2015"
+output: html_document
+---
+
+## The data ("UCI HAR Dataset" folder) should be in your working directory, otherwise the program will download and unzip the data for you 
+========================
+###The transformations I made:
+1. Reading 3 files for both the test and train data files (6 files alltogether) already with appropriate column names (some of which are from features.txt file). The data is read with check.names attribute so column names in the output are slightly different than in features.txt file (for instance prackets are changed into dots) so that they meet variable name restrictions for R. For more information, check the help section.
+2. Merging them together into one dataframe called dataAll
+3. Converting activity to factor and setting factor labels (from activity_labels.txt file)
+4. Extracting only the measurements of the mean and standard deviation for each measurement using the dplyr package and saving the output into dataMeanStd data frame
+5. Calculating the average of each variable for each activity and each subject (also with the dplyr package), saving into dataMeans data frame and then into processedData.txt file. 
